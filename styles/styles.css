@@ -1,0 +1,530 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+#page {
+    min-height: 94%;
+    padding-top: 30px;
+}
+
+.backgroundIMG {
+    margin-top: 0px;
+}
+
+#nav {
+    display:flex;
+    position: fixed;
+    background-color: #ccb5a3;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+    border-bottom: 1px solid black;
+}
+
+.left {
+    order:1;
+    margin-left: 25px;
+}
+
+.logo {
+    order:2;
+}
+
+.right {
+    order:3;
+    margin-right: 25px;
+}
+
+.right a {
+    padding: 0px 8px;
+    text-decoration: none;
+}
+
+.right-user:hover {
+    cursor:pointer;
+}
+
+#shopIcon {
+    margin-right: 5px;
+}
+
+#shopIcon:hover {
+    cursor: pointer;
+}
+
+.containerMarcador{
+    float:right;
+    padding: 0px 5px;
+}
+
+.containerMarcador > img{
+    cursor: pointer;
+    margin-top: 23px;
+}
+
+.containerMarcador > p{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.dropdown {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    display: none;
+    background-color: #ccb5a3;
+    margin: 20px 10px;
+    right:0;
+    padding: 0;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown ul {
+    padding: 0;
+    list-style-type: none;
+    list-style-type:none;
+}
+
+.dropdown li {
+    padding: 5px;
+    font-weight:bold;
+}
+
+.dropdown2 {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    display: none;
+    background-color: #fbe9d7;
+    margin: 15px 0px;
+    right:0;
+    padding: 0;
+    left: 80%;
+    border-left: 1px solid black;
+    overflow:auto;
+    min-height: 1000px;
+    height: auto !important;
+    height: 1000px;
+}
+
+.dropdown2 a {
+    margin: auto;
+    position: fixed;
+    text-decoration: none;
+    color: black;
+    bottom: 0;
+    margin-bottom: 40px;
+    width:20%;
+    right: 0;
+    margin-right: -10px;
+}
+
+.dropdown2 ul {
+    padding: 0;
+    list-style-type: none;
+    list-style-type:none;
+}
+
+.dropdown2 li {
+    font-weight:bold;
+    margin: 10px 0px;
+}
+
+.dropdown2 ul li * {
+    margin: 0px;
+}
+
+.dropdown2>a {
+    font-weight: bolder;
+    align-content:end;
+}
+
+.dropdown2 #cabasProds {
+    padding: 1px 0px;
+    margin: 20px;
+    background-color: #faf1e5;
+    border: 0.5px solid black;
+}
+
+.dropdown2 #cabasProds *{
+}
+
+.left a {
+    padding: 0px 10px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+section>img {
+    width:100%;
+    height: 100%;
+    position: static;
+    padding:0px;
+    margin-top:30px;
+}
+
+section {
+    padding-top:10px;
+}
+
+#productos {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    align-content:center;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#productos div {
+    margin: 10px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.titol {
+    text-align: center;
+    font-size: 40px;
+}
+
+#paginaProducto {
+    text-align:center;
+    display:grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
+    grid-template-areas:
+    'imgProducto review'
+    'imgProducto review';
+    justify-content: center;
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 800px){
+    #paginaProducto {
+        grid-template-areas:
+    'imgProducto imgProducto'
+    'imgProducto imgProducto'
+    'review review'
+    'review review'
+    }
+}
+
+#review {
+    align-items: center;
+    align-content: center;
+    width: 320px;
+}
+
+#paginaProducto h3 {
+    text-align: center;
+    font-size:30px;
+    font-weight: bolder;
+    background-color: #e6d0bd;
+    border: 2px solid #794418;
+    padding: 10px;
+}
+
+#paginaProducto h2 {
+    text-align:center;
+    font-size: 40px;
+    margin: 10px 0px;
+    float: left;
+}
+
+#quant {
+    width: 50px;
+    font-size: larger;
+    display: block;
+    margin:auto;
+    margin-bottom: 15px;
+    float: right;
+    margin-top: 17px;
+}
+
+#paginaProducto p {
+    text-align:left;
+}
+
+#container-categoria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 12px 0px;
+    margin-bottom: 80px;
+}
+
+#container-categoria div {
+    padding: 5px;
+    text-align: center;
+    margin: 5px;
+}
+
+#container-categoria div a {
+    text-decoration: none;
+    text-decoration-color: black;
+}
+
+#container-categoria div h3 {
+    width:320px;
+    font-weight: bolder;
+    font-size: 33px;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 10px;
+}
+
+#container-categoria div p {
+    width:280px;
+    text-align: start;
+    text-decoration: none;
+    color: black;
+    margin: auto;
+    margin-top: -40px;
+}
+
+#container-productes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 50px 100px;
+}
+
+#container-productes div {
+    padding: 10px;
+    margin: 0px 0px;
+    text-align: center;
+}
+
+#container-productes div a {
+    text-decoration: none;
+    text-decoration-color: black;
+}
+
+#container-productes div h3 {
+    width:230px;
+    font-weight: bolder;
+    font-size: 28px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+#container-productes div p {
+    margin-top: -25px;
+    font-size: 15px;
+    width:230px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+section.log header {
+    margin-top: -20px;
+}
+section.log {
+    margin: 40px 30%;
+    padding: 20px 20px;
+    text-align: start;
+    font-size: large;
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 1000px){
+    section.log {
+        margin: 40px 10%;
+    }
+}
+
+a:hover {
+    cursor:pointer;
+}
+
+#cabasPage {
+    padding-bottom: 80px;
+}
+
+#cabasPage ul {
+    padding: 0;
+    list-style-type: none;
+    list-style-type:none;
+}
+
+#cabasPage ul li {
+    padding: 0;
+    list-style-type: none;
+    list-style-type:none;
+    /*clear: both;*/
+}
+
+#cabasPage ul li p {
+    /*margin: 5px 0px; */
+}
+
+#prodCabasNom {
+    /*float: left; */
+}
+
+#prodCabasPreu {
+    /*float: right; */
+}
+
+
+#finalitzar-compra {
+    margin-top: 20px;
+}
+
+#buidar-button {
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+#cabasPage div{
+    /* display: block; */
+    /*clear:both;*/
+}
+
+#cabasPage div #totalCabas{
+    margin-top: 27px;
+    font-weight: bold;
+    /*float: right;*/
+}
+
+#cabasPage div button {
+    float: left;
+}
+
+
+.register-button {
+    margin-top: 15px;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.login-button {
+    margin-top: 15px;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.search-button {
+    text-align: center;
+}
+
+.buy-button {
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 20px;
+    margin-top:10px;
+}
+
+#comandesGlobal {
+}
+
+.comandaSquare {
+    background-color: #faf1e5;
+    border: 0.5px solid black;
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+
+.comandaSquare h3 {
+    margin-bottom: -23px;
+}
+
+
+.comandaSquare h6 {
+    font-size: small;
+    color:#767676;
+}
+
+.productesPedido > div > p {
+    margin: 0px 10px;
+}
+
+.productesPedido {
+    margin-top: -20px;
+    font-size: 16px;
+    padding: 8px 13px;
+}
+
+#pedidoProdRow {
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: -30px;
+}
+
+#pedidoProdNom {
+    width: 40%;
+}
+
+#pedidoProdPreu {
+    width: 15%;
+    text-align: end;
+}
+
+#pedidoProdModifyCross {
+    /* margin-left: -200px; */
+    margin-top: 0px;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+#pedidoProdModifyQuant {
+    margin-top: -3px;
+}
+
+footer {
+    background-color: #ccb5a3;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid black;
+}
+
+footer p {
+    align-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 4px;
+    text-align: right;
+}
